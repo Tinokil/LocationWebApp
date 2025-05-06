@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор городов</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            Начните ввод названия города и выберите из списка. После выбора нажмите отправить. Для добавления других городов продолжите ввод. После добавления всех городов нажмите кнопку «Готово»
+        </header>
+        <div class="search-box">
+            <input type="text" class="search-input" placeholder="Поиск города..." autocomplete="off" id="searchInput">
+        </div>
+        <div class="cities-list" id="citiesList"></div>
+    </div>
+
+    <div class="selected-cities" id="selectedCities">
+        <div class="tags" id="selectedTags"></div>
+    </div>
+
+    <div class="button-container">
+        <button class="done-btn" disabled id="doneBtn">Готово</button>
+    </div>
+</body>
+</html>
