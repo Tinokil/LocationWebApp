@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Имитация Telegram WebApp для тестирования
-    const tg = window.Telegram?.WebApp || {
+    const tg = Telegram.WebApp || {
         sendData: data => console.log('Telegram sendData:', data),
         close: () => console.log('Telegram close'),
         ready: () => {},
